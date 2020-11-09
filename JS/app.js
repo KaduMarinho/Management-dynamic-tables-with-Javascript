@@ -30,22 +30,22 @@ function addRow() {
 
 	if (atendente.style.display == "none"){		
 			
-		if (professor.value == "Danusa Moura"){
+		if (professor.value == "Professor A"){
 			row.classList.add("orange");
 			
-		}else if (professor.value == "Emanuelle Santana"){
+		}else if (professor.value == "Professor B"){
 			row.classList.add("yellow");
 			
-		}else if (professor.value == "Luciano Maia"){
+		}else if (professor.value == "Professor C"){
 			row.classList.add("green");
 			
-		}else if (professor.value == "Patrick Cunha"){
+		}else if (professor.value == "Professor D"){
 			row.classList.add("blue");
 		
-		}else if (professor.value == "Vicente Azevedo"){
+		}else if (professor.value == "Professor E"){
 			row.classList.add("indigo");
 			
-		}else if (professor.value == "Victoria Wanzeller"){
+		}else if (professor.value == "Professor F"){
 			row.classList.add("violet");
 		}
 	
