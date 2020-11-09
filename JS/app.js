@@ -50,10 +50,10 @@ function addRow() {
 		}
 	
 	}else{		
-		if (atendente.value == "Elaine Ventura"){
+		if (atendente.value == "Atendente A"){
 		row.classList.add("indigo");
 		
-		}else if (atendente.value == "Verena Moreira"){
+		}else if (atendente.value == "Atendente B"){
 		row.classList.add("violet");
 		}
 		//alert(atendente.value);
