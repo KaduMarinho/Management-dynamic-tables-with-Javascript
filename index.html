@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Manager - Cultura Inglesa</title>	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" href="images/unnamed_COS_icon.ico" />
+	<link rel="icon" href="images/unnamed_COS_icon.ico" />
+    <script type="text/javascript" src="js/app.js"></script>	
+</head>
+<body onload="load()">
+<div id="myform">
+<b>Formulário para operações gerenciais ...</b>
+	<table>
+		<form action="Javascript:addRow()">
+			<!--<tr>
+				<td>Filial:</td>	
+				
+				<td>
+					<select id="filial" onchange="SelectOperation(); SetForm()" required >
+						<option >-please select-</option>				
+						<option value="aug">Augusto Montenegro</option>
+						<option value="bra">Braz</option>	
+						<option value="ces">CESEP</option>
+						<option value="cesu">CESUPA</option>	
+						<option value="cid">Cidade Nova</option>
+						<option value="doc">Doca</option>	
+						<option value="duq">Duque</option>
+						<option value="gen">Gentil</option>	
+						<option value="ide">Ideal Jr</option>
+						<option value="peq">Pequeno Príncipe</option>							
+		<			/select>
+				</td>
+			</tr> -->
+			
+			<tr>
+				<td>Operação:</td>	
+				
+				<td>
+					<select id="operacao" onchange="SelectOperation(); SetForm()" required>
+						<option >-please select-</option>				
+						<option value="Captação">Índice Captação</option>
+						<option value="Retenção">Índice Retenção</option>				
+		<			/select>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>Ano/Semestre:</td>				
+				<td>
+					<select id="ano" required disabled>
+						<option value="">-please select-</option>							
+						<<option value="2016">2016</option>
+						<option value="2017">2017</option>
+						<option value="2018">2018</option>
+						<option value="2019">2019</option>
+						<option value="2020">2020</option>
+						<option value="2021">2021</option>	
+						<option value="2022">2022</option>
+						<option value="2023">2023</option>
+						<option value="2024">2024</option>
+						<option value="2025">2025</option>
+						<option value="2026">2026</option>
+						<option value="2027">2027</option>
+						<option value="2028">2028</option>
+						<option value="2029">2029</option>
+						<option value="2030">2030</option>					
+		<			/select>
+				</td>
+				<td>
+					<select id="semestre"  style="max-width:100%;" required disabled>
+						<option value="">----</option>							
+						<<option value="1">1</option>
+						<option value="2">2</option>											
+		<			/select>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>Consultora de Venda:</td>	
+				
+				<td>
+					<select id="atend" onchange="selectConsultora()" disabled>
+						<option value="">-please select-</option>				
+						<option value="Elaine Ventura">Elaine Ventura</option>
+						<option value="Verena Moreira">Verena Moreira</option>				
+		<			/select>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>Professor:</td>	
+				
+				<td>
+					<select id="prof" onchange="selectProfessor()" disabled>
+						<option value="">-please select-</option>				
+						<option value="Danusa Moura">Danusa Moura</option>
+						<option value="Emanuelle Santana">Emanuelle Santana</option>
+						<option value="Luciano Maia">Luciano Maia</option>
+						<option value="Patrick Cunha">Patrick Cunha</option>
+						<option value="Vicente Azevedo">Vicente Azevedo</option>
+						<option value="Victoria Wanzeller">Victoria Wanzeller</option>
+		<			/select>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>Oper. A:</td>
+				<td><input type="number" id="A" min="0" max="400" placeholder="Operador A" oninput="SelectOperation()" onchange="SelectOperation()" required disabled>        
+			</tr>
+			<tr>
+				<td>Oper. B:</td>
+				<td><input type="number" id="B" min="0" max="400" placeholder="Operador B" oninput="SelectOperation()" onchange="SelectOperation()" required disabled>        
+			</tr>
+			<tr>
+				<td>Resultado:</td>
+				<td><input type="text" id="Resultado" disabled></td>
+				<td><input type="submit" id="add" value="Add" onclick="" disabled></td>
+				<!-- Type "submit": form tag com action attribute OR
+button com onclick				-->
+
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td>	</td>
+			</tr>
+		</form>
+	</table>
+</div>
+<div id="mydata">
+<b>Dados cadastrados ...</b>
+<table id="myTableData"  border="1" cellpadding="2">
+    <thead>
+		<tr id="head">'
+			<td>&nbsp;</td>       
+			<td><b>Operação</b></td>
+			<td><b>Ano/Semestre</b></td>
+			<td><b>Consultora de Venda</b></td>
+			<td><b>Professor</b></td>
+			<td><b>Oper. A</b></td>
+			<td><b>Oper. B</b></td>
+			<td><b>Resultado</b></td>
+		</tr>
+	</thead>
+</table>
+&nbsp;
+ 
+</div>
+<div id="myDynamicTable">
+<input type="button" id="print" value="Imprimir" onclick="Javascript:PrintElem()">
+</div>
+
+<!--<div class="footer">
+  <p>Powered by: <a href="">Eduardo Marinho</a></p>
+  <p>Contato: <a class="mailtoui" href="mailto:kadumarinhog@gmail.com">
+  Envie uma mensagem</a>.</p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/mailtoui@1.0.3/dist/mailtoui-min.js"></script>-->
+
+</body>
+</html>

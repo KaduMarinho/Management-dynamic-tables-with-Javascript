@@ -1,0 +1,67 @@
+
+	input[type=number]{
+		width: 100%;
+	}
+	
+	#myTableData:hover{
+		color: white;
+	}
+	
+	#head{
+		background-color: #99A3A4;
+	}	
+		
+	.red{
+		background-color: #FF0000;
+		font-weight: bold;
+	}
+
+	.orange{
+		background-color: #FF7F00;
+		font-weight: bold;
+	}
+	
+	.yellow{
+		background-color: #FFFF00;
+		font-weight: bold;
+	}
+	
+	.green{
+		background-color: #00FF00;
+		font-weight: bold;
+	}
+	
+	.blue{
+		background-color: #0000FF;
+		font-weight: bold;
+	}
+	
+	.indigo{
+		background-color: #FF33E6;
+		font-weight: bold;
+	}
+	
+	.violet{
+		background-color: #8B00FF;
+		font-weight: bold;
+	}
+
+
+
+	.footer {
+	  position: absolute;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
+	  padding: 1rem;
+	  background-color: #efefef;
+	  text-align: center;
+	}
+
+
+
+
+
+	
+
+	
